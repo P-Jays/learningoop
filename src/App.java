@@ -42,6 +42,22 @@ public class App {
 
         System.out.println("This is method");
        
+
+        Methode metode1 = new Methode("Metta","10643039");
+        metode1.show();
+        metode1.setName("My love");
+        metode1.show();
+        String testParNReturn =  metode1.sayHi("PJ");
+        
+        System.out.println(testParNReturn);
+
+        for(int i = 0 ; i<=20; i++){
+            System.out.print("=");
+            
+        }
+        System.out.println("");
+
+        System.out.println("This is exercise");
     }
 }
 
@@ -69,4 +85,47 @@ class CstrctrKlas{
         target = inputTarget;
     }
   
+
+   
+}
+
+class Methode{
+    String name ;
+    String student_id;
+
+
+    Methode(String name ,String student_id){
+        this.name = name;
+        this.student_id = student_id;
+    }
+
+    //  method without return n parameter
+    void show(){
+        System.out.println("Name: "+this.name);
+        System.out.println("Student ID: "+this.student_id);
+    }
+
+    // method with parameter no return
+    void setName(String name){
+        this.name = name;                 
+    }
+
+    void setStudentID(String student_id){
+        this.student_id = student_id;
+    }
+
+    // method with return without parameter
+    String getName(){
+        return this.name;
+    }
+
+    String getStudentID(){
+        return this.student_id;
+    }
+
+
+    // method with return with parameter
+    String sayHi(String name){
+        return "Hello "+name;
+    }
 }

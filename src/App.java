@@ -57,7 +57,12 @@ public class App {
         }
         System.out.println("");
 
-        System.out.println("This is exercise");
+        System.out.println("This is setter n getter");
+
+        Circle lingkaran = new Circle(7);
+        lingkaran.setJari(7);
+        System.out.println(lingkaran.getJari()+" this is getter from jari2");
+        
     }
 }
 
@@ -87,6 +92,25 @@ class CstrctrKlas{
   
 
    
+}
+
+// learning setter n getter
+class Circle{
+    private double jari;
+    private double luas;
+    // circle constructor
+    Circle(double jari){
+        this.luas = jari * jari; 
+        System.out.println("Luas: "+this.luas +" with jari2:"+jari);
+    }
+
+    public void setJari(double jari){
+        this.jari = jari;
+    }
+
+    public double getJari(){
+        return this.jari;
+    }
 }
 
 class Methode{

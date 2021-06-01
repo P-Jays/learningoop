@@ -62,7 +62,30 @@ public class App {
         Circle lingkaran = new Circle(7);
         lingkaran.setJari(7);
         System.out.println(lingkaran.getJari()+" this is getter from jari2");
-        
+
+        for(int i = 0 ; i<=20; i++){
+            System.out.print("=");
+            
+        }
+        System.out.println("");
+        System.out.println("ini adalah static variable");
+
+        Statik statik1 = new Statik("PJ");
+        Statik statik2 = new Statik("PJ2");
+        Statik statik3 = new Statik("PJ3");
+
+        statik1.show();
+        statik2.show();
+
+        statik3.show();
+        System.out.println("ini adalah statik");
+        //Statik.type = "Hello"; // kita bsa lansung memanggil statik variable di luar obj , karena statik variable milik class bukan obj
+        // tapi ada cara lebih baik menggunakan statik, yg ini tidak di anjurkan
+
+        statik1.showStatik("Hellooo");
+        System.out.println("Display type: "+ statik1.type);
+        System.out.println("Display type: "+ statik2.type);
+        System.out.println("Display type: "+ statik3.type);
     }
 }
 
@@ -151,5 +174,29 @@ class Methode{
     // method with return with parameter
     String sayHi(String name){
         return "Hello "+name;
+    }
+}
+
+class Statik{
+    static String type ;
+    // tujuan statik adalah 2 , tidak perlu membuat obj utk memanggil variable nya
+    // pada saat di rubah maka yg lain juga ikut terubah
+    private String nama;
+
+    Statik(String nama){
+        this.nama = nama;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    void show(){
+        System.out.println("Display nama: "+this.nama);
+        
+    }
+
+    void showStatik(String type){
+        Statik.type = type;
     }
 }

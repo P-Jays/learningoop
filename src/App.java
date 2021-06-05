@@ -3,6 +3,10 @@ import java.util.ArrayList;
 
 // import this for using object from another folder (using Statik.java)
 import com.src.tuto.Statik;
+
+// import static method from another folder (Care.java)
+import static com.src.tuto.Care.log;
+
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -83,7 +87,9 @@ public class App {
         HeroStatik.showHeroes();
         player1.showHeroes(); // hasilnya akan sama karena static
 
-
+        blankSpace();
+        System.out.println("This is import static method from another package");
+        log("PJ");
     }
 
 

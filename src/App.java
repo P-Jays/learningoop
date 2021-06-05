@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+
+// import this for using object from another folder (using Statik.java)
+import com.src.tuto.Statik;
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -179,55 +182,6 @@ class Methode {
     }
 }
 
-class Statik {
-    static String type;
-    // tujuan statik adalah 2 , tidak perlu membuat obj utk memanggil variable nya
-    // pada saat di rubah maka yg lain juga ikut terubah
-    private String nama;
 
-    Statik(String nama) {
-        this.nama = nama;
-    }
 
-    public String getNama() {
-        return nama;
-    }
-
-    void show() {
-        System.out.println("Display nama: " + this.nama);
-
-    }
-
-    void showStatik(String type) {
-        Statik.type = type;
-    }
-}
-
-class HeroStatik {
-    private String name;
-    private static int heroTotal;
-    private static ArrayList<String> heroList = new ArrayList<String>();
-
-    HeroStatik(String name) {
-        this.name = name;
-        HeroStatik.addHero();
-        heroList.add(this.name);
-    }
-
-    void display() {
-        System.out.println("My name is " + this.name);
-    }
-
-    static void showTotal() {
-        System.out.println("Hero total" + HeroStatik.heroTotal);
-    }
-
-    private static void addHero() {
-        HeroStatik.heroTotal++;
-    }
-
-     static void showHeroes(){
-        System.out.println("the list of heroes :"+HeroStatik.heroList);
-    }
-
-}
+// moving Class HeroStatik to another file

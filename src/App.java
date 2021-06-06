@@ -105,6 +105,22 @@ public class App {
         double j = Matematika.count(1, 0.8);
         System.out.println("this overriding method: "+j);
 
+        blankSpace();
+        System.out.println("learning inheritance");
+
+        HeroDad heroPapa = new HeroDad();
+        heroPapa.name = "Papa PJ";
+        HeroSon heroBoy = new HeroSon();
+        heroBoy.name = " PJ Son";
+        HeroDaughter heroGirl = new HeroDaughter();
+        heroGirl.name = "PJ baby girl";
+        heroPapa.show();
+        heroBoy.show();
+        heroGirl.show();
+
+        blankSpace();
+        System.out.println("learning inheritance");
+
     }
 
 

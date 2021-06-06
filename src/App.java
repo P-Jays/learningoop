@@ -90,6 +90,21 @@ public class App {
         blankSpace();
         System.out.println("This is import static method from another package");
         log("PJ");
+
+        blankSpace();
+        System.out.println("This is overriding constructor n method");
+        // override adalah menggunakan nama constructor sama dan method yg sama tapi beda yg kirinya wkkw
+        Override over1 = new Override();
+        Override over2 = new Override("PJ");
+
+        over1.show();
+        over2.show();
+
+        int i = Matematika.count(0,8);
+        System.out.println("this overriding method: "+i);
+        double j = Matematika.count(1, 0.8);
+        System.out.println("this overriding method: "+j);
+
     }
 
 

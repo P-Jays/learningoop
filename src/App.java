@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 // import this for using object from another folder (using Statik.java)
 import com.src.tuto.Statik;
 
@@ -55,7 +54,7 @@ public class App {
         System.out.println(lingkaran.getJari() + " this is getter from jari2");
 
         blankSpace();
-        
+
         System.out.println("ini adalah static variable");
 
         Statik statik1 = new Statik("PJ");
@@ -93,17 +92,18 @@ public class App {
 
         blankSpace();
         System.out.println("This is overriding constructor n method");
-        // override adalah menggunakan nama constructor sama dan method yg sama tapi beda yg kirinya wkkw
+        // override adalah menggunakan nama constructor sama dan method yg sama tapi
+        // beda yg kirinya wkkw
         Override over1 = new Override();
         Override over2 = new Override("PJ");
 
         over1.show();
         over2.show();
 
-        int i = Matematika.count(0,8);
-        System.out.println("this overriding method: "+i);
+        int i = Matematika.count(0, 8);
+        System.out.println("this overriding method: " + i);
         double j = Matematika.count(1, 0.8);
-        System.out.println("this overriding method: "+j);
+        System.out.println("this overriding method: " + j);
 
         blankSpace();
         System.out.println("learning inheritance");
@@ -123,8 +123,7 @@ public class App {
 
     }
 
-
-    static void blankSpace(){
+    static void blankSpace() {
         for (int i = 0; i <= 20; i++) {
             System.out.print("=");
 
@@ -218,7 +217,5 @@ class Methode {
         return "Hello " + name;
     }
 }
-
-
 
 // moving Class HeroStatik to another file

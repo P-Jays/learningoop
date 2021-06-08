@@ -124,6 +124,16 @@ public class App {
         heroBoy.display();
         heroGirl.display();
 
+        
+        blankSpace();
+        System.out.println("learning subclass constructor");
+
+        PlayerDad player11 = new PlayerDad("PJ");
+        PlayerSon player22 = new PlayerSon("SOne");
+
+        player11.display();
+        player22.display();
+
     }
 
     static void blankSpace() {

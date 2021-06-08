@@ -119,7 +119,10 @@ public class App {
         heroGirl.show();
 
         blankSpace();
-        System.out.println("learning inheritance");
+        System.out.println("learning inheritance super");
+        
+        heroBoy.display();
+        heroGirl.display();
 
     }
 

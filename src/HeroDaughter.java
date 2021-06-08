@@ -8,5 +8,10 @@ public class HeroDaughter extends HeroDad {
     // parent class tidak bisa menggunakan method dari child class
     void show() {
         System.out.println("This is overriding method from subclass" + this.name);
+        super.display();
+    }
+
+    void display(){
+        System.out.println(" this is sub class");
     }
 }
